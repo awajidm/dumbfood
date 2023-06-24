@@ -5,6 +5,7 @@ import 'package:flutter_food_delivery_ui/screens/resturant_screen.dart';
 import 'package:flutter_food_delivery_ui/widgets/recent_orders.dart';
 
 import '../widgets/rating_stars.dart';
+import 'cart_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -97,7 +98,8 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: <Widget>[
           // ignore: deprecated_member_use
           FlatButton(
-              onPressed: () {},
+              onPressed: () => Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => CartScreen())),
               child: Text(
                 'Cart (${currentUser.cart.length})',
                 style: TextStyle(color: Colors.white, fontSize: 20.0),
