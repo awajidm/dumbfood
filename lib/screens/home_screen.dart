@@ -117,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   borderRadius: BorderRadius.circular(30.0),
                   borderSide: BorderSide(
                     width: 0.8,
-                    color: Theme.of(context).primaryColor,
+                    color: Colors.amber[600],
                   ),
                 ),
                 hintText: "Search Food or Resturents",
