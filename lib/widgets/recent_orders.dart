@@ -35,7 +35,7 @@ class RecentOrders extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          order.food.name + "asjkdhfaksndf;alksdnf;lkasdnf",
+                          order.food.name,
                           style: TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.bold,
@@ -75,15 +75,16 @@ class RecentOrders extends StatelessWidget {
             margin: EdgeInsets.only(right: 20.0),
             width: 48.0,
             decoration: BoxDecoration(
-                color: Colors.amber[600],
-                borderRadius: BorderRadius.circular(30.0)),
+              color: Colors.amber[600],
+              borderRadius: BorderRadius.circular(30.0),
+            ),
             child: IconButton(
               icon: Icon(Icons.add),
               iconSize: 30.0,
               color: Colors.white,
               onPressed: () {},
             ),
-          )
+          ),
         ],
       ),
     );
